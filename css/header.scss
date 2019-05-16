@@ -3,8 +3,8 @@
     height: 100vh;
 
     &__container {
-        margin-top: 28vh;
-        height: 72vh;
+        margin-top: 24vh;
+        height: 76vh;
     }
     &__heading {
         display: flex;
@@ -20,6 +20,9 @@
         @media ( min-width: 768px ) {
             font-size: 48px
         }
+        @media ( min-width: 1024px ) {
+            font-size: 64px
+        }
         
     }
     &__heading-kanji-wrapper {
@@ -30,19 +33,32 @@
         @media ( min-width: 768px ) {
             font-size: 120px
         }
+        @media ( min-width: 1024px ) {
+            font-size: 140px
+        }
     }
     &__arrow-wrapper {
         display: flex;
+        // position: relative;
         // flex-direction: column;
         justify-content: center;
         align-items: flex-end;
         height: 50%;
     }
     &__arrow {
-        height: 24px;
-        width: 24px;
-        border-left: solid 3px black;
-        border-bottom: solid 3px black;
+        // position: absolute;
+        margin-bottom: 8vh;
+        height: 28px;
+        width: 28px;
+        border-left: solid 3px $black;
+        border-bottom: solid 3px $black;
+        @media (min-width: 768px) {
+            height: 36px;
+            width: 36px;
+            // border-left: solid 3px $black;
+            // border-bottom: solid 3px $black;
+        }
+        // bottom: 48px;
         // transform: rotate(-45deg);
 
         opacity: 0;
@@ -53,10 +69,10 @@
 @keyframes arrow-drop-down {
     from {
         opacity: 0;
-        transform: translateY(-40px) rotate(-45deg);
+        transform: translateY(-32px) rotate(-45deg);
     }
     to {
         opacity: 1;
-        transform: translateY(-12px) rotate(-45deg);
+        transform: translateY(-0px) rotate(-45deg);
     }
 }
