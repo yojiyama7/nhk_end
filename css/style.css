@@ -116,10 +116,14 @@ body {
   .c-pseudo-underline--left:before {
     right: -2px; }
   .c-pseudo-underline--height-3px:before {
+    bottom: -3px;
     height: 3px; }
 
 .footer {
-  height: 1000px; }
+  overflow-y: hidden;
+  background-color: gray; }
+  .footer__container {
+    margin-top: 12px; }
 
 .header {
   overflow-x: hidden;
@@ -180,15 +184,23 @@ body {
   text-align: right; }
 
 .main-about__text-wrapper {
-  margin-top: 60px; }
+  margin-top: 60px;
+  width: 100%; }
+  @media (min-width: 480px) {
+    .main-about__text-wrapper {
+      width: 88%; } }
 
 .main-about__text:nth-child(n+2) {
   margin-top: 24px; }
 
+.main-shop__content-wrapper {
+  margin-top: 60px; }
+
 .main {
   overflow-x: hidden; }
   .main__container {
-    margin-top: 140px; }
+    margin-top: 140px;
+    margin-bottom: 200px; }
   .main__inner:nth-child(n+2) {
     margin-top: 180px; }
   .main__inner-heading {
@@ -196,10 +208,5 @@ body {
     @media (min-width: 1024px) {
       .main__inner-heading {
         font-size: 52px; } }
-  .main__inner-text-wrapper {
-    width: 100%; }
-    @media (min-width: 480px) {
-      .main__inner-text-wrapper {
-        width: 88%; } }
   .main__inner-text {
     font-size: 18px; }

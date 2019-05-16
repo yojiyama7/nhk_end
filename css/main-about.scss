@@ -4,6 +4,11 @@
     }
     &__text-wrapper {
         margin-top: 60px;
+        // QUESTION: 気分と雰囲気でつけた。これいる？
+        width: 100%;
+        @media (min-width: 480px) {
+            width: 88%;
+        }
     }
     // QUESITON: このCSSをこのファイルに書くべきか、main-innerの付属として書くべきか
     &__text:nth-child(n+2) {
