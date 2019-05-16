@@ -92,7 +92,7 @@ body {
   width: 260px; }
   @media (min-width: 480px) {
     .c-container {
-      width: 400px; } }
+      width: 420px; } }
   @media (min-width: 768px) {
     .c-container {
       width: 600px; } }
@@ -118,49 +118,66 @@ body {
   .c-pseudo-underline--height-high:before {
     height: 3px; }
 
+.footer {
+  height: 1000px; }
+
 .header {
   overflow-x: hidden;
   height: 100vh; }
   .header__container {
     margin-top: 28vh;
-    height: 68vh; }
+    height: 72vh; }
   .header__heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 50%; }
-  .header__heading-roman-inner {
+  .header__heading-roman {
     font-size: 32px; }
     @media (min-width: 768px) {
-      .header__heading-roman-inner {
+      .header__heading-roman {
         font-size: 48px; } }
-  .header__heading-kanji {
+  .header__heading-kanji-wrapper {
     text-align: right; }
-  .header__heading-kanji-inner {
+  .header__heading-kanji {
     font-size: 100px; }
     @media (min-width: 768px) {
-      .header__heading-kanji-inner {
+      .header__heading-kanji {
         font-size: 120px; } }
-  .header__arrow {
+  .header__arrow-wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     height: 50%; }
-  .header__arrow-inner {
+  .header__arrow {
     height: 24px;
     width: 24px;
     border-left: solid 3px black;
     border-bottom: solid 3px black;
     opacity: 0;
-    animation: arrow-drop-down .5s ease-out 2s 1 forwards; }
+    animation: arrow-drop-down 0.5s ease-out 1s 1 forwards; }
 
 @keyframes arrow-drop-down {
   from {
     opacity: 0;
-    transform: translateY(-32px) rotate(-45deg); }
+    transform: translateY(-40px) rotate(-45deg); }
   to {
     opacity: 1;
-    transform: translateY(0px) rotate(-45deg); } }
+    transform: translateY(-12px) rotate(-45deg); } }
 
-.main__container {
-  margin-top: 100px; }
+.main-about__text-wrapper {
+  margin-top: 60px; }
+
+.main-about__text:nth-child(n+2) {
+  margin-top: 24px; }
+
+.main {
+  overflow: hidden; }
+  .main__container {
+    margin-top: 160px; }
+  .main__inner-heading-wrapper {
+    text-align: right; }
+  .main__inner-heading {
+    font-size: 48px; }
+  .main__inner-text-wrapper {
+    width: 88%; }

@@ -1,5 +1,21 @@
 .main {
+    overflow: hidden;
+    // display: flex;
+
     &__container {
-        margin-top: 100px;
+        margin-top: 160px;
+    }
+    &__inner-heading-wrapper {
+        text-align: right;
+    }
+    &__inner-heading {
+        font-size: 48px;
+    }
+    &__inner-text-wrapper {
+        // QUESTION: 気分と雰囲気でつけた。これいる？
+        width: 88%;
+    }
+    &__inner-text {
+
     }
 }

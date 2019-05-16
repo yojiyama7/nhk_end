@@ -1,0 +1,12 @@
+.main-about {
+    &__heading-wrapper {
+
+    }
+    &__text-wrapper {
+        margin-top: 60px;
+    }
+    // QUESITON: このCSSをこのファイルに書くべきか、main-innerの付属として書くべきか
+    &__text:nth-child(n+2) {
+        margin-top: 24px;
+    }
+}
