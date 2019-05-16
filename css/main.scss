@@ -3,17 +3,23 @@
     // display: flex;
 
     &__container {
-        margin-top: 160px;
+        margin-top: 140px;
     }
     &__inner-heading-wrapper {
         text-align: right;
     }
     &__inner-heading {
         font-size: 44px;
+        @media (min-width: 1024px) {
+            font-size: 52px;
+        }
     }
     &__inner-text-wrapper {
         // QUESTION: 気分と雰囲気でつけた。これいる？
-        width: 88%;
+        width: 100%;
+        @media (min-width: 480px) {
+            width: 88%;
+        }
     }
     &__inner-text {
         font-size: 18px;

@@ -115,7 +115,7 @@ body {
     left: -2px; }
   .c-pseudo-underline--left:before {
     right: -2px; }
-  .c-pseudo-underline--height-high:before {
+  .c-pseudo-underline--height-3px:before {
     height: 3px; }
 
 .footer {
@@ -185,12 +185,18 @@ body {
 .main {
   overflow: hidden; }
   .main__container {
-    margin-top: 160px; }
+    margin-top: 140px; }
   .main__inner-heading-wrapper {
     text-align: right; }
   .main__inner-heading {
     font-size: 44px; }
+    @media (min-width: 1024px) {
+      .main__inner-heading {
+        font-size: 52px; } }
   .main__inner-text-wrapper {
-    width: 88%; }
+    width: 100%; }
+    @media (min-width: 480px) {
+      .main__inner-text-wrapper {
+        width: 88%; } }
   .main__inner-text {
     font-size: 18px; }
