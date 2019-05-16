@@ -1,0 +1,22 @@
+.c-pseudo-underline {
+    position: relative;
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        height: 2px;
+        width: 2000px;
+        bottom: -2px;
+        border-radius: 2px;
+        background-color: black;
+    }
+    &--right:before {
+        left: -2px;
+    }
+    &--left:before {
+        right: -2px;
+    }
+    &--height-high:before {
+        height: 3px;
+    }
+}

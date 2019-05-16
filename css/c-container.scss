@@ -1,0 +1,16 @@
+.c-container {
+    margin: 0px auto;
+    width: 260px;
+    // スマホ横
+    @media ( min-width: 480px ) { 
+        width: 400px
+    }
+    // タブレット
+    @media ( min-width: 768px ) {
+        width: 600px
+    }
+    // PC
+    @media ( min-width: 1024px ) {
+        width: 800px;
+    }
+}
