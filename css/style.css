@@ -176,6 +176,9 @@ body {
     opacity: 1;
     transform: translateY(0px) rotate(-45deg); } }
 
+.main-about__heading-wrapper {
+  text-align: right; }
+
 .main-about__text-wrapper {
   margin-top: 60px; }
 
@@ -183,11 +186,11 @@ body {
   margin-top: 24px; }
 
 .main {
-  overflow: hidden; }
+  overflow-x: hidden; }
   .main__container {
     margin-top: 140px; }
-  .main__inner-heading-wrapper {
-    text-align: right; }
+  .main__inner:nth-child(n+2) {
+    margin-top: 180px; }
   .main__inner-heading {
     font-size: 44px; }
     @media (min-width: 1024px) {

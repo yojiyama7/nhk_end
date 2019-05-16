@@ -1,12 +1,15 @@
 .main {
-    overflow: hidden;
+    overflow-x: hidden;
     // display: flex;
 
     &__container {
         margin-top: 140px;
     }
+    &__inner:nth-child(n+2) {
+        margin-top: 180px;
+    }
     &__inner-heading-wrapper {
-        text-align: right;
+        
     }
     &__inner-heading {
         font-size: 44px;
