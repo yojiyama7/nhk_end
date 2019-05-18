@@ -120,10 +120,26 @@ body {
     height: 3px; }
 
 .footer {
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: gray; }
   .footer__container {
-    margin-top: 12px; }
+    margin-top: 24px;
+    margin-bottom: 12px; }
+  .footer__sns-list {
+    text-align: right; }
+  .footer__sns-item {
+    display: inline-block;
+    margin-left: 24px; }
+  .footer__sns-item-icon {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+    color: #fafafa; }
+  .footer__copyright-wrapper {
+    margin-top: 24px;
+    text-align: right; }
+  .footer__copyright {
+    font-size: 14px; }
 
 .header {
   overflow-x: hidden;
