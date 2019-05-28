@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
 article,aside,details,figcaption,figure,
@@ -97,4 +97,8 @@ input, select {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+button {
+    line-height: 1;
 }
